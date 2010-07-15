@@ -1,0 +1,34 @@
+sfDI plugin
+===========
+
+The `sfDIPlugin` is a symfony plugin that implements a stand-alone data
+integration package. It can request heterogeneous data from several sources
+and integrates it in a datagraph as SimpleXMLElement for further use by
+application developers. It can be extended by new wrappers to handle more
+data sources.
+
+It already brings wrappers for Flickr and Photobucket.
+
+Installation
+------------
+
+  * Download and install the plugin
+
+        $ symfony plugin:install sfDIPlugin-<VERSION>.tgz
+
+  * Call the data integrator from your application
+
+        sfDI::getContent()
+
+  * The method returns a datagraph as SimpleXMLElement
+
+Extend plugin with new wrapper
+------------------------------
+
+  * A complete description about how to extend the plugin will be available on the upcoming project homepage.
+
+TODO
+----
+
+  * Extend logging configuration (e.g. overwrite log file after 7 days, compress log file)
+  * Write documentation and setup project homepage
